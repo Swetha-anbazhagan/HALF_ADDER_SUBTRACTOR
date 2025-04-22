@@ -67,37 +67,35 @@ RegisterNumber:212224040343
 
 HALF ADDER
 
-module ha_behv(a, b, s, ca);
-    input a;
-    input b;
-    output s;
-    output ca;
-	 reg s,ca;
-	 always @ (a or b)
- begin
-	 s=a^b;
-	 ca=a&b;
-	 end
+module HA(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum=(a^b);
+assign carry=(a&b);
 endmodule
 
 HALF SUBTRACTER
 
-module hs_behv(a, b, dif, bor);
-    input a;
-    input b;
-    output dif;
-    output bor;
-	 reg dif,bor;
-	 reg abar;
-	 always@(a or b) begin
-	 abar=~a;
-	 dif=a^b;
-	 bor=b&abar;
-	 end
+module HS(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference=(a^b);
+assign borrow=(~a&b);
 endmodule
+
 ```
 **RTL Schematic**
 
+![WhatsApp Image 2025-04-22 at 23 25 43_02281874](https://github.com/user-attachments/assets/7490f9d9-0cc5-4a5a-81a7-94972b913aed)
+
+![WhatsApp Image 2025-04-22 at 23 04 39_acdaae83](https://github.com/user-attachments/assets/8c43076d-0dd3-44ff-bb4f-24c8001139a3)
+
 **Output/TIMING Waveform**
 
+![WhatsApp Image 2025-04-22 at 23 23 53_d437af95](https://github.com/user-attachments/assets/106eb80a-2a2a-4bf4-a9fd-d939bd5b7815)
+
+![WhatsApp Image 2025-04-22 at 23 04 39_f14799aa](https://github.com/user-attachments/assets/55d05165-8110-4a21-8bf3-f0fb3a0e5d6b)
+
 **Result:**
+
+  Thus,the Verilog program has been successfully executed.
