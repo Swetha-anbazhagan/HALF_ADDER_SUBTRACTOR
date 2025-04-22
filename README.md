@@ -39,7 +39,8 @@ Half Adder:
 
 ![half_adder_tt1](https://github.com/user-attachments/assets/14f89243-97bf-476f-b44a-243640d34ffb)
 
-Half  Subtracter
+Half  Subtracter:
+
 ![half_sub_tt1](https://github.com/user-attachments/assets/59dc7a5c-0d95-4840-a522-c1c0db62921c)
 
 
@@ -60,7 +61,7 @@ Half  Subtracter
 
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-'''
+```
 Developed by:Swetha A
 RegisterNumber:212224040343
 
